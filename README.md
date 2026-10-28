@@ -1,4 +1,4 @@
-# make-commit 🚀
+# make-commit
 
 > An AI agent skill that inspects Git diffs and repository history to generate clean, contextual, and convention-aware commit messages, while auto-guarding against leaked AI artifacts and secrets.
 
@@ -8,22 +8,22 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- 🔍 **Diff & History Inspection**: Analyzes both staged (`git diff --cached`) and unstaged changes while learning from recent repository commits.
-- 🤖 **AI Artifact Auto-Sanitization**: Scans workspace for AI assistant folders and files (`.gemini/`, `.claude/`, `.cursor/`, `.cline/`, `.aider*`, scratch/brain directories) and auto-appends them to the target project's `.gitignore` before drafting commits.
-- 📐 **Format Auto-Detection**:
+- **Diff & History Inspection**: Analyzes both staged (`git diff --cached`) and unstaged changes while learning from recent repository commits.
+- **AI Artifact Auto-Sanitization**: Scans workspace for AI assistant folders and files (`.gemini/`, `.claude/`, `.cursor/`, `.cline/`, `.aider*`, scratch/brain directories) and auto-appends them to the target project's `.gitignore` before drafting commits.
+- **Format Auto-Detection**:
   - **Conventional Commits** (`feat(auth): ...`, `fix: ...`)
   - **Issue / Ticket Prefixes** (`[PROJ-123] ...`, `#42: ...`)
   - **Gitmoji** (`✨ feat: ...`, `🐛 fix: ...`)
   - **Imperative Standard** (`Add ...`, `Fix ...`)
-- 🛡️ **Secret & Security Guardrails**: Detects and refuses to expose sensitive files, `.env` variables, API keys, credentials, or internal AI metadata in commit messages.
-- ✂️ **Atomic Commit Advice**: Identifies mixed concerns and recommends splitting changes into distinct, logical commits.
-- ⚡ **Copy-Ready Output**: Provides commit messages in plain text blocks with zero manual cleanup required.
+- **Secret & Security Guardrails**: Detects and refuses to expose sensitive files, `.env` variables, API keys, credentials, or internal AI metadata in commit messages.
+- **Atomic Commit Advice**: Identifies mixed concerns and recommends splitting changes into distinct, logical commits.
+- **Copy-Ready Output**: Provides commit messages in plain text blocks with zero manual cleanup required.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 make-commit-skill/
@@ -35,7 +35,7 @@ make-commit-skill/
 
 ---
 
-## 📦 Installation
+## Installation
 
 This skill adheres to standard agent skill specifications and works across modern AI coding assistants.
 
@@ -74,7 +74,7 @@ cp SKILL.md ~/.claude/skills/make-commit/SKILL.md
 
 ---
 
-## 🎯 Usage
+## Usage
 
 Once installed, trigger the skill using slash commands or natural language prompts:
 
@@ -91,7 +91,7 @@ Once installed, trigger the skill using slash commands or natural language promp
 
 ---
 
-## 📝 Example Output
+## Example Output
 
 ### Conventional Commits
 ```text
